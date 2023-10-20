@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order summary card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: #FFDEE9;
+            background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            height: 430px;
+            width: 270px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 10px;
+        }
+        .box1 img{
+            height: 125px;
+            width: 100%;
+        }
+        .amountbox img{
+            height: 23px;
+            border-radius: 5px;
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            gap: 20px;
+        }
+        .box2 p{
+            text-align: center;
+            font-size: 13px;
+        }
+        .amountbox{
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            background-color: rgba(173, 206, 206, 0.699);
+            height: 30px;
+            width: 95%;
+            padding: 5px;
+            border-radius: 7px;
+        }
+        .Leftbox{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: small;
+        }
+        .Rightbox{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+        }
+        #paybutton{
+            height: 40px;
+            width: 100%;
+            /* padding: 5px; */
+            border-radius: 7px;
+            background-color: rgb(13, 13, 53);
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        #paybutton span{
+            font-size: 14px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .canclebutton a{
+            text-decoration: none;
+            color: black;
+            /* font-size: 14px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="box1">
+                <img src="tech image.jpg" alt="image">
+            </div>
+            <div class="box2">
+                <h3>Order Summary</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt veritatis magni culpa doloremque ullam!
+                </p>
+                <div class="amountbox">
+                    <div class="Leftbox">
+                        <img src="music logo png.png" alt="logo">
+                        <span>
+                            Annual Plan <br>$99.9/year
+                        </span>
+                    </div>
+                    <div class="Rightbox">
+                        <a href="#">Change</a>
+                    </div>
+                </div>
+                <button id="paybutton">
+                    <span>Proceed to Payment</span>
+                </button>
+                <div class="canclebutton">
+                    <a href="#"><h5>Cancel Order</h5></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
